@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,23 +14,21 @@
       padding: 0 20px;
       color: #222;
       background: #fff;
-    }
 
-    h1, h2 {
-      color: #111;
+      padding-bottom: 120px; /* space for footer */
     }
 
     h1 {
+      font-weight: 800;
+      font-size: 36px;
+      color: #111;
       border-bottom: 2px solid #eee;
       padding-bottom: 10px;
     }
 
     h2 {
       margin-top: 30px;
-    }
-
-    ul {
-      margin-left: 20px;
+      color: #111;
     }
 
     .meta {
@@ -40,6 +39,33 @@
 
     .section {
       margin-bottom: 25px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    /* FULL WIDTH FIXED FOOTER */
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 80px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -62,21 +88,15 @@
   <div class="section">
     <h2>General Information</h2>
     <p>
-      This app provides a digital dice functionality for local game sessions.
-      Clients connect to a host device via Bluetooth Low Energy (BLE). During a game session,
-      the player name entered by the user, technical Bluetooth identifiers required for the connection,
-      and the dice result are transmitted to connected devices so that participants can take part in the session.
+      This app provides a digital dice functionality for local game sessions. Clients connect to a host device via Bluetooth Low Energy (BLE). During a game session, the player name entered by the user, technical Bluetooth identifiers required for the connection, and the dice result are transmitted to connected devices so that participants can take part in the session.
     </p>
 
     <p>
-      On certain older Android versions, location permissions may be technically required by the operating system
-      in order to scan for or connect to BLE devices. The app itself does not access, store, or use location information
-      for tracking or localization purposes.
+      On certain older Android versions, location permissions may be technically required by the operating system in order to scan for or connect to BLE devices. The app itself does not access, store, or use location information for tracking or localization purposes.
     </p>
 
     <p>
-      The app is distributed via Google Play. The controller named above is solely responsible for the processing of personal data within the app.
-      Any processing carried out by Google in connection with the Play Store is governed by Google’s own privacy policy.
+      The app is distributed via Google Play. The controller named above is solely responsible for the processing of personal data within the app. Any processing carried out by Google in connection with the Play Store is governed by Google’s own privacy policy.
     </p>
   </div>
 
@@ -111,17 +131,16 @@
     <h2>Legal Basis</h2>
     <p>
       Processing is carried out only to the extent necessary to provide the app’s functionality.
-      The legal basis for processing is Art. 6(1)(f) GDPR (legitimate interests), namely the technical provision and operation
-      of the app’s local multiplayer functionality.
+      The legal basis for processing is Art. 6(1)(f) GDPR (legitimate interests), namely the technical provision and operation of the app’s local multiplayer functionality.
     </p>
   </div>
 
   <div class="section">
     <h2>Data Sharing</h2>
     <p>
-      The player name, technical Bluetooth identifiers, and dice results are transmitted via BLE exclusively to devices
-      participating in the same local game session.
+      The player name, technical Bluetooth identifiers, and dice results are transmitted via BLE exclusively to devices participating in the same local game session.
     </p>
+
     <p>
       No personal data is shared with external servers, analytics providers, advertising networks, or other third parties.
     </p>
@@ -130,8 +149,7 @@
   <div class="section">
     <h2>Storage Duration</h2>
     <p>
-      The app does not permanently store personal data. Data is processed only temporarily during the active game session
-      and is deleted when the session ends or the app is closed.
+      The app does not permanently store personal data. Data is processed only temporarily during the active game session and is deleted when the session ends or the app is closed.
     </p>
   </div>
 
@@ -174,6 +192,10 @@
       The current version published for the app shall apply.
     </p>
   </div>
+
+  <footer>
+    <a href="https://voidbond.com/imprint">Impressum</a>
+  </footer>
 
 </body>
 </html>
