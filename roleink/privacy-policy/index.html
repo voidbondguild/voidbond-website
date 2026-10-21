@@ -92,111 +92,226 @@
 
   <div class="section">
     <h2>General Information</h2>
+
     <p>
-      This app provides a digital dice functionality for local game sessions. Clients connect to a host device via Bluetooth Low Energy (BLE). During a game session, the player name entered by the user, technical Bluetooth identifiers required for the connection, and the dice result are transmitted to connected devices so that participants can take part in the session.
+      RoleInk allows users to create and manage character-sheet templates
+      and characters locally on their devices and to share them during
+      local game sessions.
     </p>
 
     <p>
-      On certain older Android versions, location permissions may be technically required by the operating system in order to scan for or connect to BLE devices. RoleInk itself does not access, store, or use location information for tracking or localization purposes.
+      Devices communicate via Bluetooth Low Energy (BLE). The host selects
+      a template and determines which connected clients receive it.
+      Clients can create a character from the received template or select
+      an existing character that matches the session template.
     </p>
 
     <p>
-      RoleInk is distributed via Google Play. The controller named above is solely responsible for the processing of personal data within RoleInk. Any processing carried out by Google in connection with the Play Store is governed by Google’s own privacy policy.
+      Character data is shared with the host only after the client
+      explicitly selects “Send to host”. After this initial release,
+      further saved changes to the selected character are transmitted
+      automatically while sharing remains active in the current session.
+      The host can view all attributes of the shared character.
+      Switching to another character requires a new explicit release.
+    </p>
+
+    <p>
+      On certain older Android versions, location permission may be
+      technically required by the operating system to scan for or connect
+      to BLE devices. RoleInk does not use location information for
+      tracking or determining your geographical position.
+    </p>
+
+    <p>
+      RoleInk is distributed through Google Play. Google may independently
+      process information in connection with Google Play, Android and
+      related services under its own privacy policies. This processing
+      is separate from the local character-sheet and session functionality
+      described here.
     </p>
   </div>
 
   <div class="section">
     <h2>Data We Process</h2>
+
+    <p>
+      Depending on how you use RoleInk, the app processes the following data:
+    </p>
+
     <ul>
-      <li><strong>Player name:</strong> Transmitted to connected devices within the game session.</li>
-      <li><strong>Technical Bluetooth identifiers:</strong> Temporary identifiers required for BLE connection.</li>
-      <li><strong>Dice results:</strong> Transmitted to connected devices during gameplay.</li>
+      <li>
+        <strong>Client names:</strong>
+        Names entered when joining a session.
+      </li>
+      <li>
+        <strong>Templates:</strong>
+        Template titles, field labels, field types, default values,
+        selection options and other field settings.
+      </li>
+      <li>
+        <strong>Characters:</strong>
+        Character names and personal character attribute values entered
+        or selected by users.
+      </li>
+      <li>
+        <strong>Technical identifiers:</strong>
+        Bluetooth identifiers, a locally stored client identifier,
+        template and character identifiers, and session and transfer
+        identifiers.
+      </li>
+      <li>
+        <strong>Local management metadata:</strong>
+        Template origin, use and dispatch records, and associated timestamps.
+      </li>
+      <li>
+        <strong>Temporary session information:</strong>
+        Participant assignments, connection and transfer status,
+        and character data received by the host.
+      </li>
     </ul>
 
     <p>
-      RoleInk does not create user accounts and does not permanently store personal data.
+      RoleInk is intended for fictional character and game information.
+      Real names are not required. Users are responsible for the content
+      they enter and choose to share and should respect the privacy
+      and rights of others.
     </p>
   </div>
 
   <div class="section">
     <h2>Purpose of Processing</h2>
+
+    <p>
+      RoleInk processes this data to:
+    </p>
+
     <ul>
-      <li>Establishing and maintaining BLE connections between devices.</li>
-      <li>Transmitting player names to connected devices.</li>
-      <li>Providing dice functionality within the game session.</li>
-      <li>Meeting technical requirements of older Android versions.</li>
+      <li>
+        Create, display, edit and locally store templates and characters.
+      </li>
+      <li>
+        Establish and maintain BLE connections between session participants.
+      </li>
+      <li>
+        Send templates to clients selected by the host.
+      </li>
+      <li>
+        Share released character data and subsequent saved changes
+        with the host.
+      </li>
+      <li>
+        Display the host’s read-only character overview and connection status.
+      </li>
+      <li>
+        Check that transferred characters match the current session
+        and template.
+      </li>
+      <li>
+        Maintain template protection rules and prevent unintended changes
+        to used or dispatched templates.
+      </li>
     </ul>
 
     <p>
-      RoleInk does not use personal data for advertising, analytics, profiling, or tracking purposes.
+      RoleInk does not include advertising and does not use app data
+      for advertising.
     </p>
   </div>
 
   <div class="section">
     <h2>Legal Basis</h2>
     <p>
-      Processing is carried out only to the extent necessary to provide the app’s functionality.
-      The legal basis for processing is Art. 6(1)(f) GDPR (legitimate interests), namely the technical provision and operation of the app’s local multiplayer functionality.
+      Personal data is processed under Article 6(1)(f) GDPR to support
+      our legitimate interests in providing local character-sheet and
+      multiplayer functionality, reliable device communication and
+      consistent template and character data, provided these interests
+      are not overridden by your rights and freedoms.
     </p>
   </div>
 
   <div class="section">
     <h2>Data Sharing</h2>
-    <p>
-      The player name, technical Bluetooth identifiers, and dice results are transmitted via BLE exclusively to devices participating in the same local game session.
-    </p>
 
     <p>
-      No personal data is shared with external servers, analytics providers, advertising networks, or other third parties.
+      During a local game session:
     </p>
+
+    <ul>
+      <li>
+        The client name and technical information required for participation
+        are exchanged with the host.
+      </li>
+      <li>
+        The host sends the session template only to the clients
+        selected by the host.
+      </li>
+      <li>
+        After a client selects “Send to host”, the selected character’s
+        name and all character attributes are made available to the host.
+      </li>
+      <li>
+        Further saved changes to that character are transmitted
+        automatically while sharing remains active in the current session.
+      </li>
+    </ul>
   </div>
 
   <div class="section">
     <h2>Storage Duration</h2>
+
     <p>
-      RoleInk does not permanently store personal data. Data is processed only temporarily during the active game session and is deleted when the session ends or RoleInk is closed.
+      Templates and characters remain stored locally after a session ends
+      or the app is closed, until deleted by the user.
+      Local identifiers and template management records are retained
+      across sessions and may remain after individual templates
+      or characters are deleted.
+    </p>
+
+    <p>
+      The host’s participant overview, received character data and sharing
+      permissions are temporary and are cleared when the session ends
+      or the host app’s process terminates.
+    </p>
+
+    <p>
+      Deleting data on your device does not delete copies already stored
+      on other participants’ devices.
     </p>
   </div>
 
   <div class="section">
     <h2>Permissions</h2>
+
     <ul>
-      <li><strong>Bluetooth:</strong> Required for communication between devices during gameplay.</li>
-      <li><strong>Location permission:</strong> May be required on older Android versions for BLE functionality.</li>
+      <li>
+        <strong>Bluetooth:</strong>
+        Required to discover nearby session hosts, establish connections,
+        host sessions and exchange session data.
+      </li>
+      <li>
+        <strong>Location permission on older Android versions:</strong>
+        May be required by the operating system for BLE discovery.
+        RoleInk does not use this permission to track users
+        or determine their geographical position.
+      </li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Data Subject Rights</h2>
-    <ul>
-      <li>Right of access</li>
-      <li>Right to rectification</li>
-      <li>Right to erasure</li>
-      <li>Right to restriction of processing</li>
-      <li>Right to object</li>
-      <li>Right to data portability</li>
-    </ul>
+<div class="section">
+  <h2>Data Subject Rights</h2>
 
-    <p>
-      To exercise these rights, users may contact the controller named above.
-    </p>
-  </div>
+  <p>
+    Subject to applicable legal requirements, you have rights of access,
+    rectification, erasure, restriction of processing and data portability.
+  </p>
 
-  <div class="section">
-    <h2>Right to Lodge a Complaint</h2>
-    <p>
-      Users have the right to lodge a complaint with a competent data protection supervisory authority if they believe that
-      the processing of their personal data violates applicable data protection law.
-    </p>
-  </div>
+  <h3>Right to Object</h3>
 
-  <div class="section">
-    <h2>Changes to This Privacy Policy</h2>
-    <p>
-      This privacy policy may be updated if the app’s functionality, legal requirements, or technical processing procedures change.
-      The current version published for RoleInk shall apply.
-    </p>
-  </div>
+  <p>
+    You may object at any time to processing based on Article 6(1)(f) GDPR
+    on grounds relating to your particular situation.
+  </p>
+</div>
 
   <footer>
     <a href="https://voidbond.com" hreflang="de">Home</a>&nbsp;|&nbsp;<a href="https://voidbond.com/voidbond/impressum" hreflang="de">Impressum</a>&nbsp;|&nbsp;<a href="https://voidbond.com/voidbond/imprint" hreflang="en">Imprint</a>&nbsp;|&nbsp;<a href="https://voidbond.com/voidbond/datenschutz" hreflang="de">Datenschutz</a>&nbsp;|&nbsp;<a href="https://voidbond.com/voidbond/privacy-policy" hreflang="en">Privacy Policy</a>
